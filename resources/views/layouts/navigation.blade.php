@@ -1,8 +1,8 @@
     <header class="page-header row">
         <div class="logo-wrapper d-flex align-items-center col-auto">
-          <a href="index.html">
-            <img class="light-logo img-fluid" src="{{ asset('assets/images/logo/logo1.png') }}" alt="logo" />
-            <img class="dark-logo img-fluid" src="{{ asset('assets/images/logo/logo-dark.png') }}" alt="logo" />
+          <a href="{{ route('dashboard') }}" class="logo">
+            <img class="light-logo img-fluid" src="{{ asset('assets/images/skyteam_travel.png') }}" alt="logo" />
+            <img class="dark-logo img-fluid" src="{{ asset('assets/images/skyteam_travel.png') }}" alt="logo" />
           </a>
           <a class="close-btn toggle-sidebar" href="javascript:void(0)">
             <svg class="svg-color">
@@ -75,25 +75,13 @@
                       <svg class="svg-color">
                         <use href="{{ asset('assets/css/iconly-sprite.svg#Profile') }}"></use>
                       </svg>
-                      <a class="ms-2" href="user-profile.html">Account</a>
-                    </li>
-                    <li class="d-flex">
-                      <svg class="svg-color">
-                        <use href="{{ asset('assets/css/iconly-sprite.svg#Message') }}"></use>
-                      </svg>
-                      <a class="ms-2" href="letter-box.html">Inbox</a>
-                    </li>
-                    <li class="d-flex">
-                      <svg class="svg-color">
-                        <use href="{{ asset('assets/css/iconly-sprite.svg#Document') }}"></use>
-                      </svg>
-                      <a class="ms-2" href="to-do.html">Task</a>
+                      <a class="ms-2" href="{{ route('profile.edit') }}">Account</a>
                     </li>
                     <li class="d-flex">
                       <svg class="svg-color">
                         <use href="{{ asset('assets/css/iconly-sprite.svg#Login') }}"></use>
                       </svg>
-                      <a class="ms-2" href="login.html">Log Out</a>
+                      <a class="ms-2" href="{{ route('logout') }}">Log Out</a>
                     </li>
                   </ul>
                 </div>
