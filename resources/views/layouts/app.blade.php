@@ -48,15 +48,9 @@
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
-                        <div class="col-md-6 footer-copyright">
-                            <p class="mb-0">Copyright 2024 © Admiro theme by pixelstrap.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="float-end mb-0">Hand crafted &amp; made with <svg class="svg-color footer-icon">
-                                <use href="{{ asset('assets/css/iconly-sprite.svg#Heart') }}"></use>
-                            </svg>
-                            </p>
-                        </div>
+                            <div class="col-md-6 footer-copyright">
+                                <p class="mb-0">Copyright {{ date('Y') }} © by <a target="_blank" href="https://www.linkedin.com/in/surya-kant-4b6134198/">Developer</a>.</p>
+                            </div>
                         </div>
                     </div>
                 </footer>
